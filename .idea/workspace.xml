@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cbed3a58-baaf-4084-a197-7560aa0772bf" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="127.0.0.1" id="df0098db-5d69-4b3e-82f3-1a8595648135" name="localhost" />
+    </servers>
+  </component>
+  <component name="ProjectId" id="1n2ZAxtyU41Fqz67OErtjcwZOuR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="apachi-build" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost" start_url="/dev_train_02/php-tutorial">
+      <method v="2">
+        <option name="FtpUpload" enabled="true">
+          <server_id>016db018-57d5-4e60-91d5-662a4174f297</server_id>
+          <server_name>apachi</server_name>
+          <group_name />
+          <path>$PROJECT_DIR$/php-tutorial</path>
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cbed3a58-baaf-4084-a197-7560aa0772bf" name="Default Changelist" comment="" />
+      <created>1610590006571</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610590006571</updated>
+      <workItem from="1610590008201" duration="611000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="559" y="205" width="896" height="666" key="#Deployment" timestamp="1610590586746">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="559" y="205" width="896" height="666" key="#Deployment/0.0.1920.1080@0.0.1920.1080" timestamp="1610590586746" />
+    <state x="547" y="202" key="#Servers" timestamp="1610590091137">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="547" y="202" key="#Servers/0.0.1920.1080@0.0.1920.1080" timestamp="1610590091137" />
+    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610590620130">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610590620130" />
+    <state x="784" y="466" key="NewPhpFileDialog" timestamp="1610590631841">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="784" y="466" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610590631841" />
+    <state x="721" y="246" width="568" height="588" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog" timestamp="1610590588637">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="721" y="246" width="568" height="588" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610590588637" />
+  </component>
+</project>

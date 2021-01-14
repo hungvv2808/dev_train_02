@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="016db018-57d5-4e60-91d5-662a4174f297" name="apachi" url="http://localhost/dev_train_02">
+        <fileTransfer port="0" mountedRoot="/Applications/XAMPP/xamppfiles/htdocs/dev_train_02" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
