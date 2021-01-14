@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbed3a58-baaf-4084-a197-7560aa0772bf" name="Default Changelist" comment="" />
+    <list default="true" id="cbed3a58-baaf-4084-a197-7560aa0772bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/controller/PostsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/model/Posts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/repository/PostsRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/resource/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/css/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/resource/image/demo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/resource/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/resource/less/style.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/util/ConnectUtil.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/util/Constant.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/views/admin/add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/views/template/library.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-tutorial/views/user/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-tutorial/index.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,24 +49,84 @@
       <executable />
     </execution>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dev_train@127.0.0.1" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dev_train@127.0.0.1" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dev_train@127.0.0.1" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="dev_train: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dev_train@127.0.0.1" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="dev_train: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="posts: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpServers">
     <servers>
       <server host="127.0.0.1" id="df0098db-5d69-4b3e-82f3-1a8595648135" name="localhost" />
     </servers>
   </component>
   <component name="ProjectId" id="1n2ZAxtyU41Fqz67OErtjcwZOuR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/php-tutorial/views/resource" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/php-tutorial" />
+      <recent name="$PROJECT_DIR$/php-tutorial/views" />
+      <recent name="$PROJECT_DIR$/php-tutorial/views/user" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/php-tutorial/views/resource" />
+      <recent name="$PROJECT_DIR$/php-tutorial/resource" />
+      <recent name="$PROJECT_DIR$/php-tutorial/resource/image" />
+      <recent name="$PROJECT_DIR$/php-tutorial/resource/bootstrap4" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="apachi-build" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost" start_url="/dev_train_02/php-tutorial">
+    <configuration name="apachi-build" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost" start_url="/dev_train_02/php-tutorial/views/user/index.php">
       <method v="2">
         <option name="FtpUpload" enabled="true">
           <server_id>016db018-57d5-4e60-91d5-662a4174f297</server_id>
@@ -45,7 +142,22 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:dev_train@127.0.0.1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:dev_train@127.0.0.1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@526d21a6" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:dev_train@127.0.0.1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@7f7b13a6" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -62,33 +174,119 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610590006571</updated>
-      <workItem from="1610590008201" duration="611000" />
+      <workItem from="1610590008201" duration="807000" />
+      <workItem from="1610590905451" duration="686000" />
+      <workItem from="1610591783324" duration="55000" />
+      <workItem from="1610605940900" duration="12388000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="559" y="205" width="896" height="666" key="#Deployment" timestamp="1610590586746">
+    <state x="559" y="205" width="896" height="666" key="#Deployment" timestamp="1610592880451">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="559" y="205" width="896" height="666" key="#Deployment/0.0.1920.1080@0.0.1920.1080" timestamp="1610590586746" />
-    <state x="547" y="202" key="#Servers" timestamp="1610590091137">
+    <state x="559" y="205" width="896" height="666" key="#Deployment/0.0.1920.1080@0.0.1920.1080" timestamp="1610592880451" />
+    <state x="560" y="205" key="#SQL_Dialects" timestamp="1610609077106">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="547" y="202" key="#Servers/0.0.1920.1080@0.0.1920.1080" timestamp="1610590091137" />
-    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610590620130">
+    <state x="560" y="205" key="#SQL_Dialects/0.0.1920.1080@0.0.1920.1080" timestamp="1610609077106" />
+    <state x="547" y="202" key="#Servers" timestamp="1610592133981">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610590620130" />
-    <state x="784" y="466" key="NewPhpFileDialog" timestamp="1610590631841">
+    <state x="547" y="202" key="#Servers/0.0.1920.1080@0.0.1920.1080" timestamp="1610592133981" />
+    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610606378846">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="784" y="466" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610590631841" />
-    <state x="721" y="246" width="568" height="588" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog" timestamp="1610590588637">
+    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610606378846" />
+    <state x="773" y="263" key="#com.intellij.ide.util.MemberChooser" timestamp="1610608580702">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="721" y="246" width="568" height="588" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610590588637" />
+    <state x="773" y="263" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1610608580702" />
+    <state width="1878" height="276" key="GridCell.Tab.0.bottom" timestamp="1610619259280">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1610619259280" />
+    <state width="1878" height="276" key="GridCell.Tab.0.center" timestamp="1610619259279">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="276" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1610619259279" />
+    <state width="1878" height="276" key="GridCell.Tab.0.left" timestamp="1610619259278">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="276" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1610619259278" />
+    <state width="1878" height="276" key="GridCell.Tab.0.right" timestamp="1610619259280">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="276" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1610619259280" />
+    <state width="1878" height="276" key="GridCell.Tab.1.bottom" timestamp="1610619259711">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="276" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1610619259711" />
+    <state width="1878" height="276" key="GridCell.Tab.1.center" timestamp="1610619259710">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="276" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1610619259710" />
+    <state width="1878" height="276" key="GridCell.Tab.1.left" timestamp="1610619259709">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="276" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1610619259709" />
+    <state width="1878" height="276" key="GridCell.Tab.1.right" timestamp="1610619259710">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="276" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1610619259710" />
+    <state width="1878" height="276" key="GridCell.Tab.2.bottom" timestamp="1610619260110">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="276" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1610619260110" />
+    <state width="1878" height="276" key="GridCell.Tab.2.center" timestamp="1610619260109">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="276" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1610619260109" />
+    <state width="1878" height="276" key="GridCell.Tab.2.left" timestamp="1610619260109">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="276" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1610619260109" />
+    <state width="1878" height="276" key="GridCell.Tab.2.right" timestamp="1610619260110">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="276" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1610619260110" />
+    <state x="671" y="347" key="NewPhpClassDialog" timestamp="1610615660314">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="671" y="347" key="NewPhpClassDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610615660314" />
+    <state x="784" y="466" key="NewPhpFileDialog" timestamp="1610609525742">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="784" y="466" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610609525742" />
+    <state x="469" y="179" key="SettingsEditor" timestamp="1610591757003">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="469" y="179" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1610591757003" />
+    <state x="841" y="281" width="264" height="518" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1610607025999">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="841" y="281" width="264" height="518" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610607025999" />
+    <state x="721" y="246" width="568" height="588" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog" timestamp="1610592881816">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="721" y="246" width="568" height="588" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610592881816" />
+    <state x="601" y="266" key="new project wizard" timestamp="1610608026486">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="601" y="266" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1610608026486" />
+    <state x="625" y="233" key="run.anything.popup" timestamp="1610614238661">
+      <screen x="0" y="23" width="1920" height="992" />
+    </state>
+    <state x="625" y="233" key="run.anything.popup/0.23.1920.992@0.23.1920.992" timestamp="1610614238661" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1610609405135">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1610609405135" />
   </component>
 </project>

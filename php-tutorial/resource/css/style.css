@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.width100 {
+  width: 100%;
+}
+.user,
+.admin {
+  margin: 3rem auto;
+}
+.user .list-infor {
+  margin-top: 2rem;
+}
+.user .list-infor .table tr th,
+.user .list-infor .table tr td {
+  vertical-align: middle;
+}
+.user .list-infor .table tr td i:hover {
+  cursor: pointer;
+  color: red;
+}
+.user .list-infor .table tr .id {
+  width: 70px;
+  text-align: center;
+}
+.user .list-infor .table tr .thumb {
+  width: 10%;
+}
+.user .list-infor .table tr .title {
+  width: 35%;
+}
+.user .list-infor .table tr .status {
+  width: 10%;
+  text-align: center;
+}
+.user .image-size {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.admin .btn-custom {
+  width: 100px;
+  height: 50px;
+  margin-top: 2rem;
+}
