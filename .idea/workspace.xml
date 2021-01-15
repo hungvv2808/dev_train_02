@@ -2,48 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c468057-dd9d-442c-9e46-9abc43d7599f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dev_train_02.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/css/all.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/controller/PostsController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/model/Posts.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/php-tutorial.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/repository/PostsRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/resource/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/css/all.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-brands-400.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-brands-400.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-brands-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-brands-400.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-brands-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-regular-400.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-regular-400.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-regular-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-regular-400.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-regular-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-solid-900.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-solid-900.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-solid-900.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-solid-900.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/resource/fontawsome/webfonts/fa-solid-900.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/resource/image/demo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/resource/js/custom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/resource/less/style.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/util/ConnectUtil.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/util/Constant.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/views/admin/add.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/views/template/library.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-tutorial/views/user/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/controllers/WelcomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/controllers/WelcomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/models/BaseModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/models/BaseModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/models/PostModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/models/PostModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/resource/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-brands-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-brands-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-brands-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-brands-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-regular-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-regular-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-regular-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-regular-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-solid-900.eot" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-solid-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-solid-900.woff" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-solid-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/resource/image/demo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/image/demo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/resource/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/resource/less/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/less/style.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/util/ConnectUtil.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/util/ConnectUtil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/util/Constant.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/views/template/library.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/template/library.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/views/user/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/user/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/views/welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/welcome.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +54,30 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dev_train@127.0.0.1" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dev_train@127.0.0.1" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dev_train@127.0.0.1" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="dev_train: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="dev_train@127.0.0.1" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="dev_train: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="posts: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="Git.Settings">
@@ -93,6 +104,12 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manage/views" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="CONFIGURATION" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="Apache Local Web Server" start_url="/dev_train_02/manage/index.php">
@@ -111,7 +128,12 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:dev_train@127.0.0.1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -128,8 +150,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610699985947</updated>
-      <workItem from="1610699988744" duration="680000" />
+      <workItem from="1610699988744" duration="5701000" />
     </task>
+    <task id="LOCAL-00001" summary="remake form mvc php">
+      <created>1610700739984</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610700739984</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +167,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="remake form mvc php" />
+    <option name="LAST_COMMIT_MESSAGE" value="remake form mvc php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="643" y="226" key="#Deployment" timestamp="1610700546336">
@@ -151,9 +183,77 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610700669820" />
+    <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610706289977">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610706289977" />
+    <state x="569" y="55" key="CommitChangelistDialog2" timestamp="1610700739655">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="569" y="55" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1610700739655" />
+    <state width="1878" height="356" key="GridCell.Tab.0.bottom" timestamp="1610703054240">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="356" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054240" />
+    <state width="1878" height="356" key="GridCell.Tab.0.center" timestamp="1610703054238">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="356" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054238" />
+    <state width="1878" height="356" key="GridCell.Tab.0.left" timestamp="1610703054237">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="356" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054237" />
+    <state width="1878" height="356" key="GridCell.Tab.0.right" timestamp="1610703054239">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="356" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054239" />
+    <state width="1878" height="356" key="GridCell.Tab.1.bottom" timestamp="1610703054242">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="356" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054242" />
+    <state width="1878" height="356" key="GridCell.Tab.1.center" timestamp="1610703054241">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="356" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054241" />
+    <state width="1878" height="356" key="GridCell.Tab.1.left" timestamp="1610703054240">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="356" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054240" />
+    <state width="1878" height="356" key="GridCell.Tab.1.right" timestamp="1610703054241">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="356" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054241" />
+    <state width="1878" height="356" key="GridCell.Tab.2.bottom" timestamp="1610703054244">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="356" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054244" />
+    <state width="1878" height="356" key="GridCell.Tab.2.center" timestamp="1610703054243">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="356" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054243" />
+    <state width="1878" height="356" key="GridCell.Tab.2.left" timestamp="1610703054242">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="356" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054242" />
+    <state width="1878" height="356" key="GridCell.Tab.2.right" timestamp="1610703054243">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="356" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054243" />
+    <state x="685" y="173" key="RollbackChangesDialog" timestamp="1610706308621">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="685" y="173" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610706308621" />
+    <state x="560" y="261" key="Vcs.Push.Dialog.v2" timestamp="1610700745532">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="560" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1610700745532" />
     <state x="721" y="246" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog" timestamp="1610700548978">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="721" y="246" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610700548978" />
+    <state x="625" y="255" key="run.anything.popup" timestamp="1610703007109">
+      <screen x="0" y="23" width="1920" height="992" />
+    </state>
+    <state x="625" y="255" key="run.anything.popup/0.23.1920.992@0.23.1920.992" timestamp="1610703007109" />
   </component>
 </project>

@@ -5,6 +5,6 @@ class WelcomeController extends BaseController {
     }
 
     function index() {
-        $this->view("welcome");
+        $this->view("user/index");
     }
 }

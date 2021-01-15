@@ -15,4 +15,6 @@ require "./controllers/${controllerName}.php";
 
 // call method(action) from controller
 $controllerObj = new $controllerName;
-$controllerObj->$actionName();
+if ($controllerName !== 'WelcomeController') {
+    $controllerObj->$actionName();
+}

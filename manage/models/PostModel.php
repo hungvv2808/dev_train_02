@@ -1,7 +1,5 @@
-<h1>Model loaded</h1>
-
 <?php
-class PostModel {
+class PostModel extends BaseModel {
     const TABLE = 'posts';
 
     public function getAll() {

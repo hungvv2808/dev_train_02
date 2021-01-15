@@ -2,7 +2,15 @@
 <html lang="en">
 <head>
     <title>Home</title>
-    <?php include '../template/library.php';?>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../manage/views/resource/fontawsome/css/all.css"/>
+    <link rel="stylesheet" href="../manage/views/resource/css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../manage/views/resource/js/custom.js"></script>
 </head>
 <body>
 <div class="user container">
@@ -11,7 +19,7 @@
             <h1 class="text-danger">Manage</h1>
         </div>
         <div class="col-lg-1">
-            <a class="btn btn-success" href="../admin/add.php">New</a>
+            <a class="btn btn-success" href="http://127.0.0.1/dev_train_02/manage/index.php?controller=posts">New</a>
         </div>
     </div>
 
@@ -32,7 +40,7 @@
                 <tbody>
                 <tr>
                     <th class="id" scope="row">1</th>
-                    <td class="thumb"><img src="../../resource/image/demo.jpg" alt="demo" class="image-size"/></td>
+                    <td class="thumb"><img src="../manage/views/resource/image/demo.jpg" alt="demo" class="image-size"/></td>
                     <td class="title">Title test 1</td>
                     <td class="status">Enable</td>
                     <td class="text-center">
@@ -53,7 +61,7 @@
                 </tr>
                 <tr>
                     <th class="id" scope="row">2</th>
-                    <td class="thumb"><img src="../../resource/image/demo.jpg" alt="demo" class="image-size"/></td>
+                    <td class="thumb"><img src="../manage/views/resource/image/demo.jpg" alt="demo" class="image-size"/></td>
                     <td class="title">Title test 2</td>
                     <td class="status">Enable</td>
                     <td class="text-center">
@@ -74,7 +82,7 @@
                 </tr>
                 <tr>
                     <th class="id" scope="row">3</th>
-                    <td class="thumb"><img src="../../resource/image/demo.jpg" alt="demo" class="image-size"/></td>
+                    <td class="thumb"><img src="../manage/views/resource/image/demo.jpg" alt="demo" class="image-size"/></td>
                     <td class="title">Title test 3</td>
                     <td class="status">Enable</td>
                     <td class="text-center">
@@ -95,7 +103,7 @@
                 </tr>
                 <tr>
                     <th class="id" scope="row">4</th>
-                    <td class="thumb"><img src="../../resource/image/demo.jpg" alt="demo" class="image-size"/></td>
+                    <td class="thumb"><img src="../manage/views/resource/image/demo.jpg" alt="demo" class="image-size"/></td>
                     <td class="title">Title test 4</td>
                     <td class="status">Enable</td>
                     <td class="text-center">
@@ -116,7 +124,7 @@
                 </tr>
                 <tr>
                     <th class="id" scope="row">5</th>
-                    <td class="thumb"><img src="../../resource/image/demo.jpg" alt="demo" class="image-size"/></td>
+                    <td class="thumb"><img src="../manage/views/resource/image/demo.jpg" alt="demo" class="image-size"/></td>
                     <td class="title">Title test 5</td>
                     <td class="status">Enable</td>
                     <td class="text-center">
