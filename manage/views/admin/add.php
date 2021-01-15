@@ -5,9 +5,6 @@
     <?php include '../template/library.php';?>
 </head>
 <body>
-<?php
-    include './controller/PostsController.php';
-?>
 <div class="admin container">
     <div class="row">
         <h1 class="text-center text-danger width100">Add content</h1>

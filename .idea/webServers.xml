@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="016db018-57d5-4e60-91d5-662a4174f297" name="apachi" url="http://localhost/dev_train_02">
+      <webServer id="0e6d959e-0b64-4e62-88e2-a06e5544d7b0" name="Apache Local Web Server" url="http://localhost/dev_train_02">
         <fileTransfer port="0" mountedRoot="/Applications/XAMPP/xamppfiles/htdocs/dev_train_02" accessType="MOUNT" />
       </webServer>
     </option>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="apachi">
+  <component name="PublishConfigData">
     <serverData>
-      <paths name="apachi">
+      <paths name="Apache Local Web Server">
         <serverdata>
           <mappings>
-            <mapping deploy="php-tutorial" local="$PROJECT_DIR$/php-tutorial" web="/php-tutorial" />
+            <mapping deploy="manage" local="$PROJECT_DIR$/manage" web="/manage" />
           </mappings>
         </serverdata>
       </paths>
