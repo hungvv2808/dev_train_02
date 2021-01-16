@@ -15,7 +15,7 @@ class PostsController extends BaseController {
         ]);
     }
 
-    function show() {
-        echo '<h1>K2 Bravo show</h1>';
+    function add() {
+        $this->view("admin.add");
     }
 }

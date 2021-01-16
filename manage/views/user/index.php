@@ -15,11 +15,11 @@
 <body>
 <div class="user container">
     <div class="row">
-        <div class="col-lg-11">
+        <div class="col-lg-10">
             <h1 class="text-danger"><?= $title ?></h1>
         </div>
-        <div class="col-lg-1">
-            <a class="btn btn-success" href="http://127.0.0.1/dev_train_02/manage/index.php?controller=posts">New</a>
+        <div class="col-lg-2">
+            <a class="btn btn-success" href="../manage/index.php?controller=posts&action=add">Add new post</a>
         </div>
     </div>
 
@@ -38,31 +38,29 @@
                 </tr>
                 </thead>
                 <tbody>
-                <?php
-                    foreach ($posts as $p) {
-                        echo "<tr>";
-                        echo "<th class='id' scope='row'>${p['id']}</th>";
-                        echo "<td class='thumb'><img src='${p['image']}' alt='demo' class='image-size'/></td>";
-                        echo "<td class='title'>${p['title']}</td>";
-                        echo "<td class='status'>" . ($p['status'] === '0' ? 'Enable' : 'Disable') . "</td>";
-                        echo "<td class='text-center'>
-                                    <a href='#'>
-                                        <i class='fas fa-info-circle fa-lg'></i>
-                                    </a>
-                                </td>";
-                        echo "<td class='text-center'>
-                                    <a href='#'>
-                                        <i class='fas fa-edit fa-lg'></i>
-                                    </a>
-                                </td>";
-                        echo "<td class='text-center'>
-                                    <a href='#'>
-                                        <i class='fas fa-trash-alt fa-lg'></i>
-                                    </a>
-                                </td>";
-                        echo "</tr>";
-                    }
-                ?>
+                <?php foreach($posts as $p) : ?>
+                <tr>
+                    <th class="id" scope="row"><?php echo $p['id']?></th>
+                    <td class="thumb"><img src="<?php echo $p['image']?>" alt="demo" class="image-size"/></td>
+                    <td class="title"><?php echo $p['title']?></td>
+                    <td class="status"><?php echo ($p['status'] === '0' ? 'Enable' : 'Disable') ?></td>
+                    <td class="text-center">
+                        <a href="#">
+                            <i class="fas fa-info-circle fa-lg"></i>
+                        </a>
+                    </td>
+                    <td class="text-center">
+                        <a href="../admin/add.php">
+                            <i class="fas fa-edit fa-lg"></i>
+                        </a>
+                    </td>
+                    <td class="text-center">
+                        <a href="#">
+                            <i class="fas fa-trash-alt fa-lg"></i>
+                        </a>
+                    </td>
+                </tr>
+                <?php endforeach; ?>
                 </tbody>
             </table>
         </div>
