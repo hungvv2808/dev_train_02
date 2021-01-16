@@ -1,4 +1,5 @@
 <?php
+include "../util/Constant.php";
 class BaseController {
     const VIEWS_RESOURCE = 'views';
     const MODELS_RESOURCE = 'models';
