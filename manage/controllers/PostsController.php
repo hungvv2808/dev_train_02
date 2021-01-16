@@ -9,7 +9,7 @@ class PostsController extends BaseController {
 
     function index() {
         $title = "List posts manage";
-        $this->view("user.posts", [
+        $this->view("user.index", [
             'posts' => $this->posts->getAll(),
             'title' => $title
         ]);

@@ -2,36 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c468057-dd9d-442c-9e46-9abc43d7599f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/css/all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/controllers/WelcomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/controllers/WelcomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/controllers/PostsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manage/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manage/models/BaseModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/models/BaseModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manage/models/PostModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/models/PostModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/resource/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-brands-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-brands-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-brands-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-brands-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-regular-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-regular-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-regular-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-regular-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-solid-900.eot" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-solid-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-solid-900.woff" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/webfonts/fa-solid-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/fontawsome/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/resource/image/demo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/image/demo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/resource/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/resource/less/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/less/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/util/ConnectUtil.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/util/ConnectUtil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/util/Constant.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/views/template/library.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/template/library.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/resource/fontawsome/css/all.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/manage/views/user/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/user/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/views/welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/welcome.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/views/user/posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/user/posts.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +62,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
   <component name="PhpServers">
     <servers>
       <server host="127.0.0.1" id="95564b11-0ff0-4ea0-ad01-dbf1d72423b6" name="Apache Local Web Server" />
@@ -127,11 +113,22 @@
     <option name="viewStates">
       <list>
         <serviceView>
+          <option name="contentProportion" value="0.13628988" />
           <treeState>
             <expand>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:dev_train@127.0.0.1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:dev_train@127.0.0.1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@4cc47ddf" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:dev_train@127.0.0.1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@4b78c664" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -150,7 +147,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610699985947</updated>
-      <workItem from="1610699988744" duration="5701000" />
+      <workItem from="1610699988744" duration="6171000" />
+      <workItem from="1610760804626" duration="5158000" />
     </task>
     <task id="LOCAL-00001" summary="remake form mvc php">
       <created>1610700739984</created>
@@ -159,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610700739984</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <created>1610707880730</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610707880730</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +173,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="remake form mvc php" />
-    <option name="LAST_COMMIT_MESSAGE" value="remake form mvc php" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="643" y="226" key="#Deployment" timestamp="1610700546336">
@@ -187,73 +193,77 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610706289977" />
-    <state x="569" y="55" key="CommitChangelistDialog2" timestamp="1610700739655">
+    <state x="569" y="55" key="CommitChangelistDialog2" timestamp="1610707880394">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="569" y="55" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1610700739655" />
-    <state width="1878" height="356" key="GridCell.Tab.0.bottom" timestamp="1610703054240">
+    <state x="569" y="55" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1610707880394" />
+    <state width="1596" height="286" key="GridCell.Tab.0.bottom" timestamp="1610769840546">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="356" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054240" />
-    <state width="1878" height="356" key="GridCell.Tab.0.center" timestamp="1610703054238">
+    <state width="1596" height="286" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1610769840546" />
+    <state width="1596" height="286" key="GridCell.Tab.0.center" timestamp="1610769840544">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="356" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054238" />
-    <state width="1878" height="356" key="GridCell.Tab.0.left" timestamp="1610703054237">
+    <state width="1596" height="286" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1610769840544" />
+    <state width="1596" height="286" key="GridCell.Tab.0.left" timestamp="1610769840543">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="356" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054237" />
-    <state width="1878" height="356" key="GridCell.Tab.0.right" timestamp="1610703054239">
+    <state width="1596" height="286" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1610769840543" />
+    <state width="1596" height="286" key="GridCell.Tab.0.right" timestamp="1610769840545">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="356" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054239" />
-    <state width="1878" height="356" key="GridCell.Tab.1.bottom" timestamp="1610703054242">
+    <state width="1596" height="286" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1610769840545" />
+    <state width="1878" height="356" key="GridCell.Tab.1.bottom" timestamp="1610708572890">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="356" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054242" />
-    <state width="1878" height="356" key="GridCell.Tab.1.center" timestamp="1610703054241">
+    <state width="1878" height="356" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1610708572890" />
+    <state width="1878" height="356" key="GridCell.Tab.1.center" timestamp="1610708572889">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="356" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054241" />
-    <state width="1878" height="356" key="GridCell.Tab.1.left" timestamp="1610703054240">
+    <state width="1878" height="356" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1610708572889" />
+    <state width="1878" height="356" key="GridCell.Tab.1.left" timestamp="1610708572889">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="356" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054240" />
-    <state width="1878" height="356" key="GridCell.Tab.1.right" timestamp="1610703054241">
+    <state width="1878" height="356" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1610708572889" />
+    <state width="1878" height="356" key="GridCell.Tab.1.right" timestamp="1610708572890">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="356" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054241" />
-    <state width="1878" height="356" key="GridCell.Tab.2.bottom" timestamp="1610703054244">
+    <state width="1878" height="356" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1610708572890" />
+    <state width="1878" height="356" key="GridCell.Tab.2.bottom" timestamp="1610708572892">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="356" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054244" />
-    <state width="1878" height="356" key="GridCell.Tab.2.center" timestamp="1610703054243">
+    <state width="1878" height="356" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1610708572892" />
+    <state width="1878" height="356" key="GridCell.Tab.2.center" timestamp="1610708572891">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="356" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054243" />
-    <state width="1878" height="356" key="GridCell.Tab.2.left" timestamp="1610703054242">
+    <state width="1878" height="356" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1610708572891" />
+    <state width="1878" height="356" key="GridCell.Tab.2.left" timestamp="1610708572891">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="356" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054242" />
-    <state width="1878" height="356" key="GridCell.Tab.2.right" timestamp="1610703054243">
+    <state width="1878" height="356" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1610708572891" />
+    <state width="1878" height="356" key="GridCell.Tab.2.right" timestamp="1610708572892">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="356" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1610703054243" />
+    <state width="1878" height="356" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1610708572892" />
     <state x="685" y="173" key="RollbackChangesDialog" timestamp="1610706308621">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="685" y="173" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610706308621" />
-    <state x="560" y="261" key="Vcs.Push.Dialog.v2" timestamp="1610700745532">
+    <state x="560" y="261" key="Vcs.Push.Dialog.v2" timestamp="1610707882385">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="560" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1610700745532" />
+    <state x="560" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1610707882385" />
     <state x="721" y="246" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog" timestamp="1610700548978">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="721" y="246" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610700548978" />
-    <state x="625" y="255" key="run.anything.popup" timestamp="1610703007109">
+    <state x="630" y="281" width="659" height="518" key="find.popup" timestamp="1610768177051">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="630" y="281" width="659" height="518" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1610768177051" />
+    <state x="625" y="250" key="run.anything.popup" timestamp="1610769576603">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
-    <state x="625" y="255" key="run.anything.popup/0.23.1920.992@0.23.1920.992" timestamp="1610703007109" />
+    <state x="625" y="250" key="run.anything.popup/0.23.1920.992@0.23.1920.992" timestamp="1610769576603" />
   </component>
 </project>

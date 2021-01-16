@@ -3,31 +3,22 @@ class PostModel extends BaseModel {
     const TABLE = 'posts';
 
     public function getAll() {
-        return [
-            [
-                'id' => 1,
-                'name' => 'test 1'
-            ],
-            [
-                'id' => 2,
-                'name' => 'test 2'
-            ],
-            [
-                'id' => 3,
-                'name' => 'test 3'
-            ],
-            [
-                'id' => 4,
-                'name' => 'test 4'
-            ]
-        ];
+        return $this->all(self::TABLE);
     }
 
     public function findById($id) {
-        return __METHOD__;
+        echo __METHOD__;
     }
 
-    public function deleteById() {
-        return __METHOD__;
+    public function insertData($data) {
+
+    }
+
+    public function updateData($data) {
+
+    }
+
+    public function deleteById($id) {
+        echo __METHOD__;
     }
 }

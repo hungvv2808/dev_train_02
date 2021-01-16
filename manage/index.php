@@ -8,7 +8,7 @@ require './controllers/BaseController.php';
 $controllerRequest = $_REQUEST['controller'];
 $actionRequest = $_REQUEST['action'];
 // get param to redirect and action
-$controllerName = ucfirst($controllerRequest === null ? 'Welcome' : strtolower($controllerRequest)) . 'Controller';
+$controllerName = ucfirst($controllerRequest === null ? 'Posts' : strtolower($controllerRequest)) . 'Controller';
 $actionName = $actionRequest === null ? 'index' : strtolower($actionRequest);
 // require controller by param
 require "./controllers/${controllerName}.php";

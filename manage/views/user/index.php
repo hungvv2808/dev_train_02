@@ -16,7 +16,7 @@
 <div class="user container">
     <div class="row">
         <div class="col-lg-11">
-            <h1 class="text-danger">Manage</h1>
+            <h1 class="text-danger"><?= $title ?></h1>
         </div>
         <div class="col-lg-1">
             <a class="btn btn-success" href="http://127.0.0.1/dev_train_02/manage/index.php?controller=posts">New</a>
@@ -38,111 +38,31 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th class="id" scope="row">1</th>
-                    <td class="thumb"><img src="../manage/views/resource/image/demo.jpg" alt="demo" class="image-size"/></td>
-                    <td class="title">Title test 1</td>
-                    <td class="status">Enable</td>
-                    <td class="text-center">
-                        <a href="#">
-                            <i class="fas fa-info-circle fa-lg"></i>
-                        </a>
-                    </td>
-                    <td class="text-center">
-                        <a href="../admin/add.php">
-                            <i class="fas fa-edit fa-lg"></i>
-                        </a>
-                    </td>
-                    <td class="text-center">
-                        <a href="#">
-                            <i class="fas fa-trash-alt fa-lg"></i>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <th class="id" scope="row">2</th>
-                    <td class="thumb"><img src="../manage/views/resource/image/demo.jpg" alt="demo" class="image-size"/></td>
-                    <td class="title">Title test 2</td>
-                    <td class="status">Enable</td>
-                    <td class="text-center">
-                        <a href="#">
-                            <i class="fas fa-info-circle fa-lg"></i>
-                        </a>
-                    </td>
-                    <td class="text-center">
-                        <a href="../admin/add.php">
-                            <i class="fas fa-edit fa-lg"></i>
-                        </a>
-                    </td>
-                    <td class="text-center">
-                        <a href="#">
-                            <i class="fas fa-trash-alt fa-lg"></i>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <th class="id" scope="row">3</th>
-                    <td class="thumb"><img src="../manage/views/resource/image/demo.jpg" alt="demo" class="image-size"/></td>
-                    <td class="title">Title test 3</td>
-                    <td class="status">Enable</td>
-                    <td class="text-center">
-                        <a href="../admin/add.php">
-                            <i class="fas fa-info-circle fa-lg"></i>
-                        </a>
-                    </td>
-                    <td class="text-center">
-                        <a href="../admin/add.php">
-                            <i class="fas fa-edit fa-lg"></i>
-                        </a>
-                    </td>
-                    <td class="text-center">
-                        <a href="#">
-                            <i class="fas fa-trash-alt fa-lg"></i>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <th class="id" scope="row">4</th>
-                    <td class="thumb"><img src="../manage/views/resource/image/demo.jpg" alt="demo" class="image-size"/></td>
-                    <td class="title">Title test 4</td>
-                    <td class="status">Enable</td>
-                    <td class="text-center">
-                        <a href="../admin/add.php">
-                            <i class="fas fa-info-circle fa-lg"></i>
-                        </a>
-                    </td>
-                    <td class="text-center">
-                        <a href="../admin/add.php">
-                            <i class="fas fa-edit fa-lg"></i>
-                        </a>
-                    </td>
-                    <td class="text-center">
-                        <a href="#">
-                            <i class="fas fa-trash-alt fa-lg"></i>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <th class="id" scope="row">5</th>
-                    <td class="thumb"><img src="../manage/views/resource/image/demo.jpg" alt="demo" class="image-size"/></td>
-                    <td class="title">Title test 5</td>
-                    <td class="status">Enable</td>
-                    <td class="text-center">
-                        <a href="../admin/add.php">
-                            <i class="fas fa-info-circle fa-lg"></i>
-                        </a>
-                    </td>
-                    <td class="text-center">
-                        <a href="../admin/add.php">
-                            <i class="fas fa-edit fa-lg"></i>
-                        </a>
-                    </td>
-                    <td class="text-center">
-                        <a href="#">
-                            <i class="fas fa-trash-alt fa-lg"></i>
-                        </a>
-                    </td>
-                </tr>
+                <?php
+                    foreach ($posts as $p) {
+                        echo "<tr>";
+                        echo "<th class='id' scope='row'>${p['id']}</th>";
+                        echo "<td class='thumb'><img src='${p['image']}' alt='demo' class='image-size'/></td>";
+                        echo "<td class='title'>${p['title']}</td>";
+                        echo "<td class='status'>" . ($p['status'] === '0' ? 'Enable' : 'Disable') . "</td>";
+                        echo "<td class='text-center'>
+                                    <a href='#'>
+                                        <i class='fas fa-info-circle fa-lg'></i>
+                                    </a>
+                                </td>";
+                        echo "<td class='text-center'>
+                                    <a href='#'>
+                                        <i class='fas fa-edit fa-lg'></i>
+                                    </a>
+                                </td>";
+                        echo "<td class='text-center'>
+                                    <a href='#'>
+                                        <i class='fas fa-trash-alt fa-lg'></i>
+                                    </a>
+                                </td>";
+                        echo "</tr>";
+                    }
+                ?>
                 </tbody>
             </table>
         </div>
