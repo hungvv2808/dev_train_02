@@ -8,6 +8,14 @@
   width: 100%;
 }
 
+.none {
+  display: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 .user, .admin {
   margin: 3rem auto;
 }
@@ -55,6 +63,16 @@
 }
 
 .admin {
+  .first-str {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
   .btn-custom {
     width: 100px;
     height: 50px;

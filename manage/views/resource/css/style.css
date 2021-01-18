@@ -6,6 +6,12 @@
 .width100 {
   width: 100%;
 }
+.none {
+  display: none;
+}
+.uppercase {
+  text-transform: uppercase;
+}
 .user,
 .admin {
   margin: 3rem auto;
@@ -39,6 +45,14 @@
   width: 100px;
   height: 100px;
   object-fit: cover;
+}
+.admin .first-str {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.admin .first-str::first-letter {
+  text-transform: uppercase;
 }
 .admin .btn-custom {
   width: 100px;

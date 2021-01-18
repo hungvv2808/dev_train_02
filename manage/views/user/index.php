@@ -19,7 +19,7 @@
             <h1 class="text-danger"><?= $title ?></h1>
         </div>
         <div class="col-lg-2">
-            <a class="btn btn-success" href="../manage/index.php?controller=posts&action=add">Add new post</a>
+            <a class="btn btn-success" href="../manage/index.php?controller=posts&action=<?php echo Constant::TYPE_ADD ?>">Add new post</a>
         </div>
     </div>
 
@@ -45,17 +45,17 @@
                     <td class="title"><?php echo $p['title']?></td>
                     <td class="status"><?php echo ($p['status'] === '0' ? 'Enable' : 'Disable') ?></td>
                     <td class="text-center">
-                        <a href="#">
+                        <a href="../manage/index.php?controller=posts&action=<?php echo Constant::TYPE_SHOW ?>&id=<?php echo $p['id'] ?>">
                             <i class="fas fa-info-circle fa-lg"></i>
                         </a>
                     </td>
                     <td class="text-center">
-                        <a href="../admin/add.php">
+                        <a href="../manage/index.php?controller=posts&action=<?php echo Constant::TYPE_EDIT ?>&id=<?php echo $p['id'] ?>">
                             <i class="fas fa-edit fa-lg"></i>
                         </a>
                     </td>
                     <td class="text-center">
-                        <a href="#">
+                        <a href="../manage/index.php?controller=posts&action=<?php echo Constant::TYPE_DELETE ?>&id=<?php echo $p['id'] ?>">
                             <i class="fas fa-trash-alt fa-lg"></i>
                         </a>
                     </td>

@@ -9,4 +9,10 @@ class Constant {
     const MODELS_RESOURCE = 'models';
 
     const IMAGE_PATH_DEFAULT = "../manage/views/resource/image/demo.jpg";
+    const IMAGE_PATH_NO_IMAGE = "../manage/views/resource/image/no-image.png";
+
+    const TYPE_SHOW = 'show';
+    const TYPE_EDIT = 'edit';
+    const TYPE_ADD = 'add';
+    const TYPE_DELETE = 'delete';
 }
