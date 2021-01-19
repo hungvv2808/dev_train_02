@@ -24,7 +24,7 @@ class PostsController extends BaseController {
 
     function edit($id) {
         $this->view("admin.action", [
-            'result' => $this->posts->findById(['id', $id]),
+            'result' => $this->posts->findById(['id' => $id]),
             'title' => "Edit post",
             'type' => Constant::TYPE_EDIT
         ]);
@@ -33,7 +33,7 @@ class PostsController extends BaseController {
     function delete($id, $start, $limit) {
         $this->view("user.index", [
             'title' => "List posts manage",
-            'msg' => $this->posts->deleteById(['id', $id]) ? "Delete post ${id} completed !!!" : "Delete post ${id} failed !!!",
+            'msg' => $this->posts->deleteById(['id' => $id]) ? "Delete post ${id} completed !!!" : "Delete post ${id} failed !!!",
             'css' => "alert-success",
             'posts' => $this->posts->getAll(['*'], ['name' => 'id', 'DESC'], $start, $limit),
             'records' => $this->posts->countId()
@@ -42,7 +42,7 @@ class PostsController extends BaseController {
 
     function show($id) {
         $this->view("admin.action", [
-            'result' => $this->posts->findById(['id', $id]),
+            'result' => $this->posts->findById(['id' => $id]),
             'title' => "Show post",
             'type' => Constant::TYPE_SHOW
         ]);

@@ -7,12 +7,13 @@ require './controllers/BaseController.php';
 session_start();
 
 // variable param
-
-$limit = Constant::RECORDS_LIMIT;
-
-//$limit = $_SESSION['limit_change'] === null ? Constant::RECORDS_LIMIT : $_SESSION['limit_change'];
-//echo "Limit: " . $limit;
-//$_SESSION['limit'] = $limit;
+$limit = 0;
+if (empty($_SESSION['limit'])) {
+    $limit = Constant::RECORDS_LIMIT;
+    $_SESSION['limit'] = $limit;
+} else {
+    $limit = $_SESSION['limit'];
+}
 
 $page = isset($_GET['page']) ? $_GET['page'] : 1;
 $start = ($page - 1) * $limit;

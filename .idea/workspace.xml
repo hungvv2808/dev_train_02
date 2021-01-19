@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c468057-dd9d-442c-9e46-9abc43d7599f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/manage/views/admin/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage/views/user/action.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/controllers/PostsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manage/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/views/resource/less/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/less/style.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manage/views/user/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/user/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,16 +119,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:dev_train@127.0.0.1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:dev_train@127.0.0.1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@af55e54" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:dev_train@127.0.0.1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@254c633f" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -149,7 +141,8 @@
       <workItem from="1610799594984" duration="902000" />
       <workItem from="1610820524157" duration="720000" />
       <workItem from="1610933985277" duration="26672000" />
-      <workItem from="1611020027106" duration="26615000" />
+      <workItem from="1611020027106" duration="26650000" />
+      <workItem from="1611072868871" duration="5316000" />
     </task>
     <task id="LOCAL-00001" summary="remake form mvc php">
       <created>1610700739984</created>
@@ -207,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611049347229</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update select pages">
+      <created>1611054147846</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611054147846</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +232,8 @@
     <MESSAGE value="update upload file" />
     <MESSAGE value="update 90%" />
     <MESSAGE value="fix record pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix record pagination" />
+    <MESSAGE value="update select pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="update select pages" />
   </component>
   <component name="WindowStateProjectService">
     <state x="643" y="226" key="#Deployment" timestamp="1610700546336">
@@ -255,26 +256,26 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610706289977" />
-    <state x="569" y="55" key="CommitChangelistDialog2" timestamp="1611049347027">
+    <state x="569" y="55" key="CommitChangelistDialog2" timestamp="1611054147673">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="569" y="55" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1611049347027" />
-    <state width="1596" height="286" key="GridCell.Tab.0.bottom" timestamp="1611047763971">
+    <state x="569" y="55" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1611054147673" />
+    <state width="1878" height="356" key="GridCell.Tab.0.bottom" timestamp="1611073523943">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1596" height="286" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1611047763971" />
-    <state width="1596" height="286" key="GridCell.Tab.0.center" timestamp="1611047763969">
+    <state width="1878" height="356" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1611073523943" />
+    <state width="1878" height="356" key="GridCell.Tab.0.center" timestamp="1611073523942">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1596" height="286" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1611047763969" />
-    <state width="1596" height="286" key="GridCell.Tab.0.left" timestamp="1611047763969">
+    <state width="1878" height="356" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1611073523942" />
+    <state width="1878" height="356" key="GridCell.Tab.0.left" timestamp="1611073523941">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1596" height="286" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1611047763969" />
-    <state width="1596" height="286" key="GridCell.Tab.0.right" timestamp="1611047763970">
+    <state width="1878" height="356" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1611073523941" />
+    <state width="1878" height="356" key="GridCell.Tab.0.right" timestamp="1611073523942">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1596" height="286" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1611047763970" />
+    <state width="1878" height="356" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1611073523942" />
     <state width="1878" height="356" key="GridCell.Tab.1.bottom" timestamp="1610773696436">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -307,18 +308,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="356" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1610773696438" />
-    <state x="784" y="466" key="NewPhpFileDialog" timestamp="1610959476068">
+    <state x="784" y="466" key="NewPhpFileDialog" timestamp="1611078225119">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="784" y="466" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610959476068" />
+    <state x="784" y="466" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1611078225119" />
     <state x="685" y="173" key="RollbackChangesDialog" timestamp="1610706308621">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="685" y="173" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610706308621" />
-    <state x="560" y="261" key="Vcs.Push.Dialog.v2" timestamp="1611049348644">
+    <state x="560" y="261" key="Vcs.Push.Dialog.v2" timestamp="1611054151360">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="560" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1611049348644" />
+    <state x="560" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1611054151360" />
+    <state x="857" y="434" width="310" height="211" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog" timestamp="1611073862032">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="857" y="434" width="310" height="211" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1611073862032" />
     <state x="100" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611023099823">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -331,15 +336,15 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="721" y="246" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610700548978" />
-    <state x="630" y="281" width="803" height="582" key="find.popup" timestamp="1611053997864">
+    <state x="630" y="281" width="803" height="582" key="find.popup" timestamp="1611073009452">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="630" y="281" width="803" height="582" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1611053997864" />
-    <state x="625" y="244" key="run.anything.popup" timestamp="1611045792578">
+    <state x="630" y="281" width="803" height="582" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1611073009452" />
+    <state x="625" y="244" key="run.anything.popup" timestamp="1611073840043">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
     <state x="625" y="244" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1610933999328" />
-    <state x="625" y="244" key="run.anything.popup/0.23.1920.992@0.23.1920.992" timestamp="1611045792578" />
+    <state x="625" y="244" key="run.anything.popup/0.23.1920.992@0.23.1920.992" timestamp="1611073840042" />
     <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1611052169099">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

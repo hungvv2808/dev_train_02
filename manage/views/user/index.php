@@ -5,9 +5,12 @@
     $previous = $page - 1;
     $next = $page + 1;
 
-//    $limit_change = $_POST['limit-records'];
-//    echo "Change: " . $limit_change;
-//    $_SESSION['limit_change'] = $limit_change;
+    $limit_change = $_POST['limit-records'];
+    $_SESSION['limit'] = $limit_change;
+    if ($limit_change != null) {
+        $_SESSION['limit-backup'] = $limit_change;
+        header('Refresh: 0; url=index.php');
+    }
 ?>
 
 <!DOCTYPE html>
@@ -63,7 +66,7 @@
                     <?php $index = 1 ?>
                     <?php foreach ($posts as $p) : ?>
                         <tr>
-                            <th class="id" scope="row"><?php echo $p['id'] ?></th>
+                            <th class="id" scope="row"><?php echo $index ?></th>
                             <td class="thumb"><img src="<?php echo $p['image'] ?>" alt="demo" class="image-size"/></td>
                             <td class="title"><?php echo $p['title'] ?></td>
                             <td class="status"><?php echo($p['status'] === '0' ? 'Enable' : 'Disable') ?></td>
@@ -116,7 +119,11 @@
                             <select id="limit-records" name="limit-records" class="form-control">
                                 <option selected disabled> --- Pages --- </option>
                                 <?php foreach ([5, 10, 20, 50, 100] as $limit): ?>
-                                    <option value="<?= $limit ?>" <?php echo $limit_change == $limit ? 'selected' : '' ?>><?= $limit ?></option>
+                                    <option value="<?= $limit ?>"
+                                        <?php if (!empty($limit_change)) {echo $limit_change == $limit ? 'selected' : '';}
+                                        else {echo $_SESSION['limit-backup'] == $limit ? 'selected' : '';} ?>>
+                                        <?= $limit ?>
+                                    </option>
                                 <?php endforeach; ?>
                             </select>
                         </div>
