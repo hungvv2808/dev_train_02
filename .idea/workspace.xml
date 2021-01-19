@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c468057-dd9d-442c-9e46-9abc43d7599f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/manage/controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/controllers/PostsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/views/resource/less/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/less/style.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/views/user/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/user/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +149,7 @@
       <workItem from="1610799594984" duration="902000" />
       <workItem from="1610820524157" duration="720000" />
       <workItem from="1610933985277" duration="26672000" />
-      <workItem from="1611020027106" duration="22119000" />
+      <workItem from="1611020027106" duration="26615000" />
     </task>
     <task id="LOCAL-00001" summary="remake form mvc php">
       <created>1610700739984</created>
@@ -197,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611049266386</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix record pagination">
+      <created>1611049347229</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611049347229</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +231,8 @@
     <MESSAGE value="update syntax" />
     <MESSAGE value="update upload file" />
     <MESSAGE value="update 90%" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 90%" />
+    <MESSAGE value="fix record pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix record pagination" />
   </component>
   <component name="WindowStateProjectService">
     <state x="643" y="226" key="#Deployment" timestamp="1610700546336">
@@ -244,10 +255,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610706289977" />
-    <state x="569" y="55" key="CommitChangelistDialog2" timestamp="1611049266080">
+    <state x="569" y="55" key="CommitChangelistDialog2" timestamp="1611049347027">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="569" y="55" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1611049266080" />
+    <state x="569" y="55" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1611049347027" />
     <state width="1596" height="286" key="GridCell.Tab.0.bottom" timestamp="1611047763971">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -304,10 +315,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="685" y="173" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610706308621" />
-    <state x="560" y="261" key="Vcs.Push.Dialog.v2" timestamp="1611049276759">
+    <state x="560" y="261" key="Vcs.Push.Dialog.v2" timestamp="1611049348644">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="560" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1611049276759" />
+    <state x="560" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1611049348644" />
     <state x="100" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611023099823">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -320,18 +331,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="721" y="246" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610700548978" />
-    <state x="630" y="281" width="803" height="582" key="find.popup" timestamp="1611032438156">
+    <state x="630" y="281" width="803" height="582" key="find.popup" timestamp="1611053997864">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="630" y="281" width="803" height="582" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1611032438156" />
+    <state x="630" y="281" width="803" height="582" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1611053997864" />
     <state x="625" y="244" key="run.anything.popup" timestamp="1611045792578">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
     <state x="625" y="244" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1610933999328" />
     <state x="625" y="244" key="run.anything.popup/0.23.1920.992@0.23.1920.992" timestamp="1611045792578" />
-    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1610961037501">
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1611052169099">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1610961037501" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1611052169099" />
   </component>
 </project>

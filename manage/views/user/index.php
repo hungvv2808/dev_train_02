@@ -4,6 +4,10 @@
     $pages = ceil($records / $limit);
     $previous = $page - 1;
     $next = $page + 1;
+
+//    $limit_change = $_POST['limit-records'];
+//    echo "Change: " . $limit_change;
+//    $_SESSION['limit_change'] = $limit_change;
 ?>
 
 <!DOCTYPE html>
@@ -88,25 +92,54 @@
                 <?php endif; ?>
                 </tbody>
             </table>
-            <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item">
-                        <a class="page-link" href="index.php?page=<?= $previous ?>">Previous</a>
-                    </li>
-                    <?php for ($i = 1; $i <= $pages; $i ++): ?>
-                        <li class="page-item">
-                            <a class="page-link" href="index.php?page=<?= $i ?>"><?= $i ?></a>
-                        </li>
-                    <?php endfor; ?>
-                    <li class="page-item">
-                        <a class="page-link" href="index.php?page=<?= $next ?>">Next</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="row">
+                <div class="col-lg-10">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item previous">
+                                <a class="page-link" href="index.php?page=<?= $previous ?>">Previous</a>
+                            </li>
+                            <?php for ($i = 1; $i <= $pages; $i ++): ?>
+                                <li class="page-item page-<?= $i ?>">
+                                    <a class="page-link" href="index.php?page=<?= $i ?>"><?= $i ?></a>
+                                </li>
+                            <?php endfor; ?>
+                            <li class="page-item">
+                                <a class="page-link" href="index.php?page=<?= $next ?>">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-2">
+                    <form id="pages" method="post" action="#">
+                        <div class="form-group">
+                            <select id="limit-records" name="limit-records" class="form-control">
+                                <option selected disabled> --- Pages --- </option>
+                                <?php foreach ([5, 10, 20, 50, 100] as $limit): ?>
+                                    <option value="<?= $limit ?>" <?php echo $limit_change == $limit ? 'selected' : '' ?>><?= $limit ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 <script>
+    (function () {
+        $('.page-<?= $page ?>').addClass('active');
+        if (<?= $page ?> === 1) {
+            $('.previous').addClass('disabled');
+        }
+    })();
+
+    $(document).ready(function () {
+        $('#limit-records').change(function () {
+            $('#pages').submit();
+        });
+    });
+
     function confirmDelete(msg, id) {
         var r = confirm('Are you sure to delete post \"' + msg + '\" ?');
         if (r === true) {
