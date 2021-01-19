@@ -7,10 +7,11 @@ class PostsController extends BaseController {
         $this->posts = new PostModel();
     }
 
-    function index() {
+    function index($start, $limit) {
         $this->view("user.index", [
-            'posts' => $this->posts->getAll(),
-            'title' => "List posts manage"
+            'posts' => $this->posts->getAll(['*'], ['name' => 'id', 'DESC'], $start, $limit),
+            'title' => "List posts manage",
+            'records' => $this->posts->countId()
         ]);
     }
 
@@ -29,8 +30,13 @@ class PostsController extends BaseController {
         ]);
     }
 
-    function delete($id) {
-        echo __METHOD__;
+    function delete($id, $start, $limit) {
+        $this->view("user.index", [
+            'title' => "List posts manage",
+            'msg' => $this->posts->deleteById(['id', $id]) ? "Delete post ${id} completed !!!" : "Delete post ${id} failed !!!",
+            'css' => "alert-success",
+            'posts' => $this->posts->getAll(['*'], ['name' => 'id', 'DESC'], $start, $limit)
+        ]);
     }
 
     function show($id) {
@@ -38,6 +44,24 @@ class PostsController extends BaseController {
             'result' => $this->posts->findById(['id', $id]),
             'title' => "Show post",
             'type' => Constant::TYPE_SHOW
+        ]);
+    }
+
+    function save($data, $start, $limit) {
+        $this->view("user.index", [
+            'title' => "List posts manage",
+            'msg' => $this->posts->insertData($data) ? "Save completed !!!" : "Save error !!!",
+            'css' => "alert-success",
+            'posts' => $this->posts->getAll(['*'], ['name' => 'id', 'DESC'], $start, $limit)
+        ]);
+    }
+
+    function update($data, $start, $limit) {
+        $this->view("user.index", [
+            'title' => "List posts manage",
+            'msg' => $this->posts->updateData($data) ? "Update completed !!!" : "Update error !!!",
+            'css' => "alert-success",
+            'posts' => $this->posts->getAll(['*'], ['name' => 'id', 'DESC'], $start, $limit)
         ]);
     }
 }

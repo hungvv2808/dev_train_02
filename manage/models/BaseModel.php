@@ -10,10 +10,16 @@ class BaseModel extends ConnectUtil {
         return mysqli_query($this->connect, $sql);
     }
 
-    public function all($tableName, $select, $orderBy, $limit) {
+    public function count($tableName) {
+        $sql = "SELECT COUNT(DISTINCT id) FROM ${tableName}";
+        $data = $this->connect->query($sql)->fetch_array();
+        return $data[0];
+    }
+
+    public function all($tableName, $select, $orderBy, $start, $limit) {
         $columns = implode(', ', $select);
         $orderBys = implode(' ', $orderBy);
-        $sql = "SELECT ${columns} FROM ${tableName} ORDER BY ${orderBys} LIMIT ${limit}";
+        $sql = "SELECT ${columns} FROM ${tableName} ORDER BY ${orderBys} LIMIT ${start}, ${limit}";
         $query = $this->_query($sql);
         $data = [];
         while ($row = mysqli_fetch_assoc($query)) {
@@ -28,16 +34,51 @@ class BaseModel extends ConnectUtil {
         return mysqli_fetch_assoc($query);
     }
 
-    public function insert($data) {
+    public function insert($tableName, $key, $data) {
+        $title = $data['title'];
+        $description = $data['description'];
+        $image = $data['image'];
+        $status = $data['status'];
+        $create_at = $data['create_at'];
+        $update_at = $data['update_at'];
 
+        $sql = "INSERT INTO ${tableName}(${key}) VALUES ('"
+            . $title
+            . "', '"
+            . $description
+            . "', '"
+            . $image
+            . "', "
+            . $status
+            . ", '"
+            . $create_at
+            . "', '"
+            . $update_at
+            . "')";
+        return $this->connect->query($sql);
     }
 
-    public function update($data) {
+    public function update($tableName, $data) {
+        $id = $data['id'];
+        $title = $data['title'];
+        $description = $data['description'];
+        $image = $data['image'];
+        $status = $data['status'];
+        $update_at = $data['update_at'];
 
+        $sql = "UPDATE ${tableName} SET 
+                 title = '" . $title . "', 
+                 description = '" . $description . "',
+                 image = '" . $image . "',
+                 status = " . $status . ",
+                 update_at = '" . $update_at . "'
+                WHERE id = " . $id . "
+               ";
+        return $this->connect->query($sql);
     }
 
     public function delete($tableName, $condition) {
         $sql = "DELETE FROM ${tableName} WHERE ${condition}";
-        $this->connect->query($sql);
+        return $this->connect->query($sql);
     }
 }

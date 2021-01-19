@@ -4,10 +4,20 @@ require './util/ConnectUtil.php';
 require './models/BaseModel.php';
 require './controllers/BaseController.php';
 
+session_start();
+
 // variable param
-$controllerRequest = $_REQUEST['controller'];
-$actionRequest = $_REQUEST['action'];
+$limit = Constant::RECORDS_LIMIT;
+$_SESSION['limit'] = $limit;
+
+$page = isset($_GET['page']) ? $_GET['page'] : 1;
+$start = ($page - 1) * $limit;
+$_SESSION['page'] = $page;
+
 $idRequest = $_REQUEST['id'];
+$actionRequest = $_REQUEST['action'];
+$controllerRequest = $_REQUEST['controller'];
+
 // get param to redirect and action
 $controllerName = ucfirst($controllerRequest === null ? 'Posts' : strtolower($controllerRequest)) . 'Controller';
 $actionName = $actionRequest === null ? 'index' : strtolower($actionRequest);
@@ -17,19 +27,67 @@ require "./controllers/${controllerName}.php";
 // call method(action) from controller
 $controllerObj = new $controllerName;
 
-if ($idRequest === null) {
-    $controllerObj->$actionName();
-} else {
-    $controllerObj->$actionName($idRequest);
-}
+$data = array();
+$actionSave = '';
+$imageDefault = $_SESSION['image_default'];
 
 if (isset($_POST['save'])) {
+    unset($data);
+    $data = array();
+    $actionSave = 'save';
+
+    $target = '';
+    if (!empty($_FILES['image']['name'])) {
+        $imagePath = time() . '_' . $_FILES['image']['name'];
+        $target = Constant::RESOURCE_PATH.'/target/'.$imagePath;
+        move_uploaded_file($_FILES['image']['tmp_name'], $target);
+    } else {
+        $target = Constant::IMAGE_PATH_NO_IMAGE;
+    }
+
     $data = [
-        'id' => $_POST['id'],
-        'title' => $_POST['title'],
-        'description' => $_POST['description'],
-        'image' => $_POST['image'],
-        'status' => $_POST['status']
+        'title' => (string) $_POST['title'],
+        'description' => (string) $_POST['description'],
+        'image' => (string) $target,
+        'status' => (int) $_POST['status'],
+        'create_at' => (new DateTime())->format(Constant::DATE_TIME_FORMAT),
+        'update_at' => (new DateTime())->format(Constant::DATE_TIME_FORMAT)
     ];
-    print_r($data);
+}
+if (isset($_POST['update'])) {
+    unset($data);
+    $data = array();
+    $actionSave = 'update';
+
+    $target = '';
+    if (!empty($_FILES['image']['name'])) {
+        $imagePath = time() . '_' . $_FILES['image']['name'];
+        $target = Constant::RESOURCE_PATH.'/target/'.$imagePath;
+        move_uploaded_file($_FILES['image']['tmp_name'], $target);
+    } else {
+        $target = $imageDefault;
+    }
+
+    $data = [
+        'id' => (int) $_POST['id'],
+        'title' => (string) $_POST['title'],
+        'description' => (string) $_POST['description'],
+        'image' => (string) $target,
+        'status' => (int) $_POST['status'],
+        'update_at' => (new DateTime())->format(Constant::DATE_TIME_FORMAT)
+    ];
+}
+
+if ($idRequest === null) {
+    if ($actionName === 'add') {
+        $controllerObj->$actionName();
+    } else {
+        $controllerObj->$actionName($start, $limit);
+    }
+} else {
+    if (empty($data)) {
+        $controllerObj->$actionName($idRequest, $start, $limit);
+    } else {
+        $controllerObj->$actionSave($data, $start, $limit);
+    }
 }

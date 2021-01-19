@@ -51,6 +51,12 @@
           width: 10%;
           text-align: center;
         }
+        .empty {
+          text-align: center;
+          font-style: italic;
+          font-weight: unset;
+          color: #ff0000a1;
+        }
       }
     }
   }
@@ -59,6 +65,8 @@
     width: 100px;
     height: 100px;
     object-fit: cover;
+    border: 1px solid #1bff05;
+    border-radius: 4rem;
   }
 }
 
@@ -71,6 +79,14 @@
     &::first-letter {
       text-transform: uppercase;
     }
+  }
+
+  .image-custom {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 10rem !important;
+    border: 3px solid #46ff00bf;
   }
 
   .btn-custom {

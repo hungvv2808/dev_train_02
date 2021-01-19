@@ -8,6 +8,8 @@
     + [XÂY DỰNG MÔ HÌNH MVC VỚI PHP](https://www.youtube.com/playlist?list=PLh5At4osX60L4eqaTVvsXNaA2yOMHYMGd)
     
     + [Image Preview and Upload PHP and MySQL database](https://www.youtube.com/playlist?list=PL3pyLl-dgiqA4et_2H2x_ujCCODcxfhW1)
+    
+    + [Bootstrap Pagination in PHP and MySQL With dynamic limit](https://www.youtube.com/watch?v=S0Getpg3l_A)
 
 - Set permission for XAMPP:
 

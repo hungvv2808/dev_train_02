@@ -15,4 +15,10 @@ class Constant {
     const TYPE_EDIT = 'edit';
     const TYPE_ADD = 'add';
     const TYPE_DELETE = 'delete';
+
+    const DATE_TIME_FORMAT = 'Y-m-d h:i:s';
+
+    const RESOURCE_PATH = '../manage';
+
+    const RECORDS_LIMIT = 10;
 }
