@@ -35,7 +35,8 @@ class PostsController extends BaseController {
             'title' => "List posts manage",
             'msg' => $this->posts->deleteById(['id', $id]) ? "Delete post ${id} completed !!!" : "Delete post ${id} failed !!!",
             'css' => "alert-success",
-            'posts' => $this->posts->getAll(['*'], ['name' => 'id', 'DESC'], $start, $limit)
+            'posts' => $this->posts->getAll(['*'], ['name' => 'id', 'DESC'], $start, $limit),
+            'records' => $this->posts->countId()
         ]);
     }
 
@@ -52,7 +53,8 @@ class PostsController extends BaseController {
             'title' => "List posts manage",
             'msg' => $this->posts->insertData($data) ? "Save completed !!!" : "Save error !!!",
             'css' => "alert-success",
-            'posts' => $this->posts->getAll(['*'], ['name' => 'id', 'DESC'], $start, $limit)
+            'posts' => $this->posts->getAll(['*'], ['name' => 'id', 'DESC'], $start, $limit),
+            'records' => $this->posts->countId()
         ]);
     }
 
@@ -61,7 +63,8 @@ class PostsController extends BaseController {
             'title' => "List posts manage",
             'msg' => $this->posts->updateData($data) ? "Update completed !!!" : "Update error !!!",
             'css' => "alert-success",
-            'posts' => $this->posts->getAll(['*'], ['name' => 'id', 'DESC'], $start, $limit)
+            'posts' => $this->posts->getAll(['*'], ['name' => 'id', 'DESC'], $start, $limit),
+            'records' => $this->posts->countId()
         ]);
     }
 }
