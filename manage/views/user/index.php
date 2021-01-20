@@ -9,7 +9,7 @@ $limit_change = $_POST['limit-records'];
 $_SESSION['limit'] = $limit_change;
 if ($limit_change != null) {
     $_SESSION['limit-backup'] = $limit_change;
-    header('Refresh: 0; url=index.php?role=' . $role);
+    header('Refresh: 0; url=' . $role);
 } else {
     $_SESSION['limit-backup'] = Constant::RECORDS_LIMIT;
 }
@@ -19,6 +19,7 @@ if ($limit_change != null) {
 <html lang="en">
 <head>
     <title>(User) <?= $title ?></title>
+    <base href="http://127.0.0.1/dev_train_02/manage/" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -58,7 +59,9 @@ if ($limit_change != null) {
                                     <img src="<?php echo $p['image'] ?>" alt="demo" class="image-size"/>
                                 </td>
                                 <td class="title">
-                                    <a href="<?= Constant::RESOURCE_PATH ?>/index.php?role=<?= Constant::ROLE_USER ?>&controller=posts&action=<?php echo Constant::TYPE_SHOW ?>&id=<?php echo $p['id'] ?>"><?php echo $p['title'] ?></a>
+                                    <a href="<?= Constant::RESOURCE_PATH ?>/<?= Constant::ROLE_USER ?>/posts/<?php echo Constant::TYPE_SHOW ?>/<?php echo $p['id'] ?>">
+                                        <?php echo $p['title'] ?>
+                                    </a>
                                 </td>
                             </tr>
                             <?php $index += 1 ?>
@@ -75,15 +78,15 @@ if ($limit_change != null) {
                         <nav aria-label="Page navigation example">
                             <ul class="pagination">
                                 <li class="page-item previous">
-                                    <a class="page-link" href="index.php?role=<?= $role ?>&page=<?= $previous ?>">Previous</a>
+                                    <a class="page-link" href="<?= $role ?>/<?= $previous ?>">Previous</a>
                                 </li>
                                 <?php for ($i = 1; $i <= $pages; $i++): ?>
                                     <li class="page-item page-<?= $i ?>">
-                                        <a class="page-link" href="index.php?role=<?= $role ?>&page=<?= $i ?>"><?= $i ?></a>
+                                        <a class="page-link" href="<?= $role ?>/<?= $i ?>"><?= $i ?></a>
                                     </li>
                                 <?php endfor; ?>
                                 <li class="page-item">
-                                    <a class="page-link" href="index.php?role=<?= $role ?>&page=<?= $next ?>">Next</a>
+                                    <a class="page-link" href="<?= $role ?>/<?= $next ?>">Next</a>
                                 </li>
                             </ul>
                         </nav>

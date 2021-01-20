@@ -6,6 +6,7 @@ $_SESSION['image_default'] = $result['image'];
 <html lang="en">
 <head>
     <title>(User) <?= $title ?></title>
+    <base href="http://127.0.0.1/dev_train_02/manage/" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -25,7 +26,7 @@ $_SESSION['image_default'] = $result['image'];
         </div>
 
         <div class="row">
-            <form action="index.php" method="post" class="width100" enctype="multipart/form-data">
+            <form action="<?= Constant::ROLE_USER ?>" method="post" class="width100" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="txtTitle">Title</label>
                     <input type="text" class="form-control" id="txtTitle" name="title" placeholder="Enter title"

@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c468057-dd9d-442c-9e46-9abc43d7599f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/manage/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/controllers/PostsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/models/BaseModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/models/BaseModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/util/Constant.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/util/Constant.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/util/FileUtil.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/views/admin/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/admin/action.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/views/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/views/resource/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/resource/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/views/user/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/user/action.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/views/user/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/views/user/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +98,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="CONFIGURATION" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="Apache Local Web Server" start_url="/dev_train_02/manage/index.php">
+    <configuration name="CONFIGURATION" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="Apache Local Web Server" start_url="/dev_train_02/manage/user">
       <method v="2">
         <option name="FtpUpload" enabled="true">
           <server_id>0e6d959e-0b64-4e62-88e2-a06e5544d7b0</server_id>
@@ -118,11 +119,6 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:dev_train@127.0.0.1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:dev_train@127.0.0.1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@530f262c" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -160,7 +156,7 @@
       <workItem from="1611072868871" duration="5350000" />
       <workItem from="1611106759343" duration="9225000" />
       <workItem from="1611116746853" duration="2222000" />
-      <workItem from="1611122418080" duration="10347000" />
+      <workItem from="1611122418080" duration="13113000" />
     </task>
     <task id="LOCAL-00001" summary="remake form mvc php">
       <created>1610700739984</created>
@@ -239,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611116328350</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="done all require without htaccess">
+      <created>1611136060328</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1611136060328</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +270,8 @@
     <MESSAGE value="update select pages" />
     <MESSAGE value="update select record" />
     <MESSAGE value="copy final function 1st" />
-    <option name="LAST_COMMIT_MESSAGE" value="copy final function 1st" />
+    <MESSAGE value="done all require without htaccess" />
+    <option name="LAST_COMMIT_MESSAGE" value="done all require without htaccess" />
   </component>
   <component name="WindowStateProjectService">
     <state x="643" y="226" key="#Deployment" timestamp="1610700546336">
@@ -278,10 +282,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="547" y="202" key="#Servers/0.0.1920.1080@0.0.1920.1080" timestamp="1610700063873" />
-    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610700669820">
+    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611138335306">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610700669820" />
+    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1611138335306" />
     <state x="648" y="275" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1611020495386">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -290,26 +294,26 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1610706289977" />
-    <state x="569" y="55" key="CommitChangelistDialog2" timestamp="1611116327973">
+    <state x="569" y="55" key="CommitChangelistDialog2" timestamp="1611136060004">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="569" y="55" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1611116327973" />
-    <state width="1596" height="286" key="GridCell.Tab.0.bottom" timestamp="1611135220172">
+    <state x="569" y="55" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1611136060004" />
+    <state width="1596" height="286" key="GridCell.Tab.0.bottom" timestamp="1611136175775">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1596" height="286" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1611135220172" />
-    <state width="1596" height="286" key="GridCell.Tab.0.center" timestamp="1611135220171">
+    <state width="1596" height="286" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1611136175775" />
+    <state width="1596" height="286" key="GridCell.Tab.0.center" timestamp="1611136175773">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1596" height="286" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1611135220171" />
-    <state width="1596" height="286" key="GridCell.Tab.0.left" timestamp="1611135220170">
+    <state width="1596" height="286" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1611136175773" />
+    <state width="1596" height="286" key="GridCell.Tab.0.left" timestamp="1611136175772">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1596" height="286" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1611135220170" />
-    <state width="1596" height="286" key="GridCell.Tab.0.right" timestamp="1611135220172">
+    <state width="1596" height="286" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1611136175772" />
+    <state width="1596" height="286" key="GridCell.Tab.0.right" timestamp="1611136175774">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1596" height="286" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1611135220172" />
+    <state width="1596" height="286" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1611136175774" />
     <state width="1878" height="356" key="GridCell.Tab.1.bottom" timestamp="1611078294174">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -350,10 +354,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="685" y="173" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1611133411322" />
-    <state x="560" y="261" key="Vcs.Push.Dialog.v2" timestamp="1611116335019">
+    <state x="560" y="261" key="Vcs.Push.Dialog.v2" timestamp="1611136062888">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="560" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1611116335019" />
+    <state x="560" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1611136062888" />
     <state x="857" y="434" width="310" height="211" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog" timestamp="1611073862032">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

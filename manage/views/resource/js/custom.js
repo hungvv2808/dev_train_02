@@ -9,7 +9,7 @@ $(document).ready(function() {
 });
 
 function rollBack(role) {
-    window.location.href = window.location.origin.concat("/dev_train_02/manage/index.php?role=" + role);
+    window.location.href = window.location.origin.concat("/dev_train_02/manage/" + role);
 }
 
 function triggerClick() {

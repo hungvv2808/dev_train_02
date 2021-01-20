@@ -9,7 +9,7 @@ $limit_change = $_POST['limit-records'];
 $_SESSION['limit'] = $limit_change;
 if ($limit_change != null) {
     $_SESSION['limit-backup'] = $limit_change;
-    header('Refresh: 0; url=index.php?role=' . $role);
+    header('Refresh: 0; url=' . $role);
 } else {
     $_SESSION['limit-backup'] = Constant::RECORDS_LIMIT;
 }
@@ -19,6 +19,7 @@ if ($limit_change != null) {
 <html lang="en">
 <head>
     <title>(Admin) <?= $title ?></title>
+    <base href="http://127.0.0.1/dev_train_02/manage/" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -38,8 +39,9 @@ if ($limit_change != null) {
             </div>
             <div class="col-lg-2">
                 <a class="btn btn-success"
-                   href="<?= Constant::RESOURCE_PATH ?>/index.php?role=<?= Constant::ROLE_ADMIN ?>&controller=posts&action=<?php echo Constant::TYPE_ADD ?>">Add
-                    new post</a>
+                   href="<?= Constant::RESOURCE_PATH ?>/<?= Constant::ROLE_ADMIN ?>/posts/<?php echo Constant::TYPE_ADD ?>">
+                    Add new post
+                </a>
             </div>
         </div>
 
@@ -76,17 +78,17 @@ if ($limit_change != null) {
                                 <td class="title"><?php echo $p['title'] ?></td>
                                 <td class="status"><?php echo($p['status'] === '0' ? 'Enable' : 'Disable') ?></td>
                                 <td class="text-center">
-                                    <a href="<?= Constant::RESOURCE_PATH ?>/index.php?role=<?= Constant::ROLE_ADMIN ?>&controller=posts&action=<?php echo Constant::TYPE_SHOW ?>&id=<?php echo $p['id'] ?>">
+                                    <a href="<?= Constant::RESOURCE_PATH ?>/<?= Constant::ROLE_ADMIN ?>/posts/<?php echo Constant::TYPE_SHOW ?>/<?php echo $p['id'] ?>">
                                         <i class="fas fa-info-circle fa-lg"></i>
                                     </a>
                                 </td>
                                 <td class="text-center">
-                                    <a href="<?= Constant::RESOURCE_PATH ?>/index.php?role=<?= Constant::ROLE_ADMIN ?>&controller=posts&action=<?php echo Constant::TYPE_EDIT ?>&id=<?php echo $p['id'] ?>">
+                                    <a href="<?= Constant::RESOURCE_PATH ?>/<?= Constant::ROLE_ADMIN ?>/posts/<?php echo Constant::TYPE_EDIT ?>/<?php echo $p['id'] ?>">
                                         <i class="fas fa-edit fa-lg"></i>
                                     </a>
                                 </td>
                                 <td class="text-center">
-                                    <a href="#" onclick="confirmDelete('<?= $p['title'] ?>', <?= $p['id'] ?>)">
+                                    <a style="color: #007bff !important;" onclick="confirmDelete('<?= $p['title'] ?>', <?= $p['id'] ?>)">
                                         <i class="fas fa-trash-alt fa-lg"></i>
                                     </a>
                                 </td>
@@ -105,15 +107,15 @@ if ($limit_change != null) {
                         <nav aria-label="Page navigation example">
                             <ul class="pagination">
                                 <li class="page-item previous">
-                                    <a class="page-link" href="index.php?role=<?= $role ?>&page=<?= $previous ?>">Previous</a>
+                                    <a class="page-link" href="<?= $role ?>/<?= $previous ?>">Previous</a>
                                 </li>
                                 <?php for ($i = 1; $i <= $pages; $i++): ?>
                                     <li class="page-item page-<?= $i ?>">
-                                        <a class="page-link" href="index.php?role=<?= $role ?>&page=<?= $i ?>"><?= $i ?></a>
+                                        <a class="page-link" href="<?= $role ?>/<?= $i ?>"><?= $i ?></a>
                                     </li>
                                 <?php endfor; ?>
                                 <li class="page-item">
-                                    <a class="page-link" href="index.php?role=<?= $role ?>&page=<?= $next ?>">Next</a>
+                                    <a class="page-link" href="<?= $role ?>/<?= $next ?>">Next</a>
                                 </li>
                             </ul>
                         </nav>
@@ -159,7 +161,7 @@ if ($limit_change != null) {
     function confirmDelete(msg, id) {
         var r = confirm('Are you sure to delete post \"' + msg + '\" ?');
         if (r === true) {
-            var url = window.location.origin + '/dev_train_02/manage/index.php?role=<?= Constant::ROLE_ADMIN ?>&controller=posts&action=<?php echo Constant::TYPE_DELETE ?>&id=' + id;
+            var url = window.location.origin + '/dev_train_02/manage/<?= Constant::ROLE_ADMIN ?>/posts/<?php echo Constant::TYPE_DELETE ?>/' + id;
             window.location = url;
         }
     }
