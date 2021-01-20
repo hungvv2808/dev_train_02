@@ -21,4 +21,10 @@ class Constant {
     const RESOURCE_PATH = '../manage';
 
     const RECORDS_LIMIT = 10;
+
+    const ROLE_USER = 'user';
+    const ROLE_ADMIN = 'admin';
+
+    const STATUS_ENABLE = 0;
+    const STATUS_DISABLE = 1;
 }

@@ -7,64 +7,100 @@ class PostsController extends BaseController {
         $this->posts = new PostModel();
     }
 
-    function index($start, $limit) {
-        $this->view("user.index", [
-            'posts' => $this->posts->getAll(['*'], ['name' => 'id', 'DESC'], $start, $limit),
-            'title' => "List posts manage",
-            'records' => $this->posts->countId()
+    function index($role, $start, $limit) {
+        $this->view("${role}.index", [
+            'posts' => $this->posts->getAll(
+                $role == Constant::ROLE_ADMIN ? ['*'] : ['id', 'title', 'description', 'image'],
+                $role == Constant::ROLE_ADMIN ? ['condition' => 1, 1] : ['condition' => 'status', Constant::STATUS_ENABLE],
+                ['name' => 'id', 'DESC'],
+                $start,
+                $limit
+            ),
+            'title' => $role == Constant::ROLE_ADMIN ? "List posts manage" : "List posts",
+            'records' => $this->posts->countId(
+                $role == Constant::ROLE_ADMIN ? ['condition' => 1, 1] : ['condition' => 'status', Constant::STATUS_ENABLE]
+            ),
+            'role' => $role
         ]);
     }
 
-    function add() {
-        $this->view("admin.action", [
+    function add($role) {
+        $this->view("${role}.action", [
             'title' => "Add post",
             'type' => Constant::TYPE_ADD
         ]);
     }
 
-    function edit($id) {
-        $this->view("admin.action", [
-            'result' => $this->posts->findById(['id' => $id]),
+    function edit($role, $id) {
+        $this->view("${role}.action", [
+            'result' => $this->posts->findById(['column' => 'id', $id]),
             'title' => "Edit post",
             'type' => Constant::TYPE_EDIT
         ]);
     }
 
-    function delete($id, $start, $limit) {
-        $this->view("user.index", [
+    function delete($role, $id, $start, $limit) {
+        $this->view("${role}.index", [
             'title' => "List posts manage",
-            'msg' => $this->posts->deleteById(['id' => $id]) ? "Delete post ${id} completed !!!" : "Delete post ${id} failed !!!",
+            'msg' => $this->posts->deleteById(['column' => 'id', $id]) ? "Delete post ${id} completed !!!" : "Delete post ${id} failed !!!",
             'css' => "alert-success",
-            'posts' => $this->posts->getAll(['*'], ['name' => 'id', 'DESC'], $start, $limit),
-            'records' => $this->posts->countId()
+            'posts' => $this->posts->getAll(
+                $role == Constant::ROLE_ADMIN ? ['*'] : ['id', 'title', 'description', 'image'],
+                $role == Constant::ROLE_ADMIN ? ['condition' => 1, 1] : ['condition' => 'status', Constant::STATUS_ENABLE],
+                ['name' => 'id', 'DESC'],
+                $start,
+                $limit
+            ),
+            'records' => $this->posts->countId(
+                $role == Constant::ROLE_ADMIN ? ['condition' => 1, 1] : ['condition' => 'status', Constant::STATUS_ENABLE]
+            ),
+            'role' => $role
         ]);
     }
 
-    function show($id) {
-        $this->view("admin.action", [
-            'result' => $this->posts->findById(['id' => $id]),
+    function show($role, $id) {
+        $this->view("${role}.action", [
+            'result' => $this->posts->findById(['column' => 'id', $id]),
             'title' => "Show post",
             'type' => Constant::TYPE_SHOW
         ]);
     }
 
-    function save($data, $start, $limit) {
-        $this->view("user.index", [
+    function save($role, $data, $start, $limit) {
+        $this->view("${role}.index", [
             'title' => "List posts manage",
             'msg' => $this->posts->insertData($data) ? "Save completed !!!" : "Save error !!!",
             'css' => "alert-success",
-            'posts' => $this->posts->getAll(['*'], ['name' => 'id', 'DESC'], $start, $limit),
-            'records' => $this->posts->countId()
+            'posts' => $this->posts->getAll(
+                $role == Constant::ROLE_ADMIN ? ['*'] : ['id', 'title', 'description', 'image'],
+                $role == Constant::ROLE_ADMIN ? ['condition' => 1, 1] : ['condition' => 'status', Constant::STATUS_ENABLE],
+                ['name' => 'id', 'DESC'],
+                $start,
+                $limit
+            ),
+            'records' => $this->posts->countId(
+                $role == Constant::ROLE_ADMIN ? ['condition' => 1, 1] : ['condition' => 'status', Constant::STATUS_ENABLE]
+            ),
+            'role' => $role
         ]);
     }
 
-    function update($data, $start, $limit) {
-        $this->view("user.index", [
+    function update($role, $data, $start, $limit) {
+        $this->view("${role}.index", [
             'title' => "List posts manage",
             'msg' => $this->posts->updateData($data) ? "Update completed !!!" : "Update error !!!",
             'css' => "alert-success",
-            'posts' => $this->posts->getAll(['*'], ['name' => 'id', 'DESC'], $start, $limit),
-            'records' => $this->posts->countId()
+            'posts' => $this->posts->getAll(
+                $role == Constant::ROLE_ADMIN ? ['*'] : ['id', 'title', 'description', 'image'],
+                $role == Constant::ROLE_ADMIN ? ['condition' => 1, 1] : ['condition' => 'status', Constant::STATUS_ENABLE],
+                ['name' => 'id', 'DESC'],
+                $start,
+                $limit
+            ),
+            'records' => $this->posts->countId(
+                $role == Constant::ROLE_ADMIN ? ['condition' => 1, 1] : ['condition' => 'status', Constant::STATUS_ENABLE]
+            ),
+            'role' => $role
         ]);
     }
 }

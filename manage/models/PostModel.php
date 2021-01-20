@@ -2,12 +2,12 @@
 class PostModel extends BaseModel {
     const TABLE = 'posts';
 
-    public function countId() {
-        return $this->count(self::TABLE);
+    public function countId($condition = ['condition' => 1, 1]) {
+        return $this->count(self::TABLE, $condition);
     }
 
-    public function getAll($select = ['*'], $orderBy = ['name' => 'id', 'DESC'], $start = 1, $limit = 10) {
-        return $this->all(self::TABLE, $select, $orderBy, $start, $limit);
+    public function getAll($select = ['*'], $condition = ['condition' => 1, 1], $orderBy = ['name' => 'id', 'DESC'], $start = 1, $limit = 10) {
+        return $this->all(self::TABLE, $select, $condition, $orderBy, $start, $limit);
     }
 
     public function findById($condition) {

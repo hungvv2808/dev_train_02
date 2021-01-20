@@ -8,8 +8,8 @@ $(document).ready(function() {
     }, 3000)
 });
 
-function rollBack() {
-    window.location.href = window.location.origin.concat("/dev_train_02/manage/index.php");
+function rollBack(role) {
+    window.location.href = window.location.origin.concat("/dev_train_02/manage/index.php?role=" + role);
 }
 
 function triggerClick() {

@@ -8,11 +8,11 @@ session_start();
 
 // variable param
 $limit = 0;
-if (empty($_SESSION['limit'])) {
+if (isset($_SESSION['limit'])) {
+    $limit = $_SESSION['limit'];
+} else {
     $limit = Constant::RECORDS_LIMIT;
     $_SESSION['limit'] = $limit;
-} else {
-    $limit = $_SESSION['limit'];
 }
 
 $page = isset($_GET['page']) ? $_GET['page'] : 1;
@@ -22,10 +22,12 @@ $_SESSION['page'] = $page;
 $idRequest = $_REQUEST['id'];
 $actionRequest = $_REQUEST['action'];
 $controllerRequest = $_REQUEST['controller'];
+$roleRequest = $_REQUEST['role'];
 
 // get param to redirect and action
 $controllerName = ucfirst($controllerRequest === null ? 'Posts' : strtolower($controllerRequest)) . 'Controller';
 $actionName = $actionRequest === null ? 'index' : strtolower($actionRequest);
+$roleName = $roleRequest === null ? 'user' : strtolower($roleRequest);
 // require controller by param
 require "./controllers/${controllerName}.php";
 
@@ -44,17 +46,17 @@ if (isset($_POST['save'])) {
     $target = '';
     if (!empty($_FILES['image']['name'])) {
         $imagePath = time() . '_' . $_FILES['image']['name'];
-        $target = Constant::RESOURCE_PATH.'/target/'.$imagePath;
+        $target = Constant::RESOURCE_PATH . '/target/' . $imagePath;
         move_uploaded_file($_FILES['image']['tmp_name'], $target);
     } else {
         $target = Constant::IMAGE_PATH_NO_IMAGE;
     }
 
     $data = [
-        'title' => (string) $_POST['title'],
-        'description' => (string) $_POST['description'],
-        'image' => (string) $target,
-        'status' => (int) $_POST['status'],
+        'title' => (string)$_POST['title'],
+        'description' => (string)$_POST['description'],
+        'image' => (string)$target,
+        'status' => (int)$_POST['status'],
         'create_at' => (new DateTime())->format(Constant::DATE_TIME_FORMAT),
         'update_at' => (new DateTime())->format(Constant::DATE_TIME_FORMAT)
     ];
@@ -67,32 +69,32 @@ if (isset($_POST['update'])) {
     $target = '';
     if (!empty($_FILES['image']['name'])) {
         $imagePath = time() . '_' . $_FILES['image']['name'];
-        $target = Constant::RESOURCE_PATH.'/target/'.$imagePath;
+        $target = Constant::RESOURCE_PATH . '/target/' . $imagePath;
         move_uploaded_file($_FILES['image']['tmp_name'], $target);
     } else {
         $target = $imageDefault;
     }
 
     $data = [
-        'id' => (int) $_POST['id'],
-        'title' => (string) $_POST['title'],
-        'description' => (string) $_POST['description'],
-        'image' => (string) $target,
-        'status' => (int) $_POST['status'],
+        'id' => (int)$_POST['id'],
+        'title' => (string)$_POST['title'],
+        'description' => (string)$_POST['description'],
+        'image' => (string)$target,
+        'status' => (int)$_POST['status'],
         'update_at' => (new DateTime())->format(Constant::DATE_TIME_FORMAT)
     ];
 }
 
 if ($idRequest === null) {
     if ($actionName === 'add') {
-        $controllerObj->$actionName();
+        $controllerObj->$actionName($roleName);
     } else {
-        $controllerObj->$actionName($start, $limit);
+        $controllerObj->$actionName($roleName, $start, $limit);
     }
 } else {
     if (empty($data)) {
-        $controllerObj->$actionName($idRequest, $start, $limit);
+        $controllerObj->$actionName($roleName, $idRequest, $start, $limit);
     } else {
-        $controllerObj->$actionSave($data, $start, $limit);
+        $controllerObj->$actionSave($roleName, $data, $start, $limit);
     }
 }

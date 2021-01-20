@@ -10,16 +10,18 @@ class BaseModel extends ConnectUtil {
         return mysqli_query($this->connect, $sql);
     }
 
-    public function count($tableName) {
-        $sql = "SELECT COUNT(DISTINCT id) FROM ${tableName}";
+    public function count($tableName, $condition) {
+        $conditions = implode(' = ', $condition);
+        $sql = "SELECT COUNT(DISTINCT id) FROM ${tableName} WHERE ${conditions}";
         $data = $this->connect->query($sql)->fetch_array();
         return $data[0];
     }
 
-    public function all($tableName, $select, $orderBy, $start, $limit) {
+    public function all($tableName, $select, $condition, $orderBy, $start, $limit) {
         $columns = implode(', ', $select);
+        $conditions = implode(' = ', $condition);
         $orderBys = implode(' ', $orderBy);
-        $sql = "SELECT ${columns} FROM ${tableName} ORDER BY ${orderBys} LIMIT ${start}, ${limit}";
+        $sql = "SELECT ${columns} FROM ${tableName} WHERE ${conditions} ORDER BY ${orderBys} LIMIT ${start}, ${limit}";
         $query = $this->_query($sql);
         $data = [];
         while ($row = mysqli_fetch_assoc($query)) {
