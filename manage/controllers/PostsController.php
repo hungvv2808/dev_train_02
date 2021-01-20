@@ -103,4 +103,8 @@ class PostsController extends BaseController {
             'role' => $role
         ]);
     }
+
+    function destroy() {
+        $this->posts->_destroy();
+    }
 }

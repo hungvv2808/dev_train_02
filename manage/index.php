@@ -85,6 +85,12 @@ if (isset($_POST['update'])) {
     ];
 }
 
+//$controllerObj->destroy();
+if (!isset($_SESSION['init'])) {
+    $controllerObj->destroy();
+    $_SESSION['init'] = true;
+}
+
 if ($idRequest === null) {
     if ($actionName === 'add') {
         $controllerObj->$actionName($roleName);

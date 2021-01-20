@@ -27,4 +27,6 @@ class Constant {
 
     const STATUS_ENABLE = 0;
     const STATUS_DISABLE = 1;
+
+    const PARAM_REWRITE = 'data';
 }

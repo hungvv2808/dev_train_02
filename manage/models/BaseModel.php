@@ -6,6 +6,32 @@ class BaseModel extends ConnectUtil {
         $this->connect = $this->connectDb();
     }
 
+    public function _destroy() {
+        // drop
+        $dropTable = "DROP TABLE IF EXISTS posts";
+        $this->connect->query($dropTable);
+
+        // create
+        $createTable = "CREATE TABLE posts (
+                            id INT PRIMARY KEY AUTO_INCREMENT,
+                            title VARCHAR(200),
+                            description TEXT,
+                            image VARCHAR(200),
+                            status INT(1),
+                            create_at DATETIME,
+                            update_at DATETIME
+                        )";
+        $this->connect->query($createTable);
+
+        // insert
+        $imageDefault = Constant::IMAGE_PATH_DEFAULT;
+        for ($i = 1; $i <= 10; $i++) {
+            $insertBase = "INSERT INTO posts(title, description, image, status, create_at, update_at)
+                        VALUES ('Hung ${i}', 'Test ${i}', '${imageDefault}', 0, NOW(), NOW())";
+            $this->connect->query($insertBase);
+        }
+    }
+
     private function _query($sql) {
         return mysqli_query($this->connect, $sql);
     }
